@@ -1,0 +1,83 @@
+
+body{
+    background: linear-gradient(
+        135deg,
+        #FFF3E0,
+        #e9b451
+    );
+}
+
+
+.card-fondo{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.card-fondo::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    opacity: 0.10; 
+
+    z-index: 0;
+}
+
+
+.card-fondo .card-body{
+    position: relative;
+    z-index: 1;
+}
+
+
+.color-principal{
+    background-color: #4A2C2A;
+    color: white;
+}
+
+.color-secundario{
+    background-color: #8B5E3C;
+    color: white;
+}
+
+.color-acento{
+    background-color: #E9724C;
+    color: white;
+}
+
+.color-destacado{
+    background-color: #FFC857;
+    color: #2b2b2b;
+}
+
+.color-claro{
+    background-color: #F6E7CB;
+    color: #2b2b2b;
+}
+
+.escudo-1::before{
+    background-image: url("./imagenes/Zeus_emblem_29.webp");
+}
+
+.escudo-2::before{
+    background-image: url("./imagenes/Orpheus_emblem_29.webp");
+}
+
+.escudo-3::before{
+    background-image: url("./imagenes/Zero_emblem_29.webp");
+}
+
+.escudo-4::before{
+    background-image: url("./imagenes/Ogre_emblem_29.webp");
+}
+
+img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
